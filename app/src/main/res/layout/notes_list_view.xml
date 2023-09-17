@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/gray_color"
+    android:layout_marginTop="10sp"
+    android:layout_marginBottom="10sp"
+    app:cardCornerRadius="8sp"
+    android:elevation="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="@font/inter_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/note_title"
+                android:text="Expenses of September"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:fontFamily="@font/inter_regular"
+                android:layout_below="@+id/note_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/note_date"
+                android:text="17-09-2023"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:textSize="15dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:fontFamily="@font/inter_regular"
+            android:layout_below="@+id/note_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/note_content"
+            android:text="@string/note_content_demo"
+            android:textColor="@color/black"
+            android:textSize="14dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
