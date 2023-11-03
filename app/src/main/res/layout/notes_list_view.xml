@@ -3,9 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="6sp"
-    android:layout_marginBottom="6sp"
-    android:background="@color/white"
+    android:layout_margin="6sp"
+    app:cardBackgroundColor="@color/dark_gray_color"
     android:elevation="12dp"
     android:orientation="vertical"
     app:cardCornerRadius="8sp">
@@ -24,9 +23,9 @@
                 android:id="@+id/note_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/inter_regular"
+                android:fontFamily="@font/balooda2"
                 android:text="Expenses of September"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -35,22 +34,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/note_title"
-                android:fontFamily="@font/inter_regular"
+                android:fontFamily="@font/balooda2"
                 android:text="17-09-2023"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="15sp"
-                android:textStyle="italic" />
+                android:textStyle="normal" />
 
         </RelativeLayout>
 
         <TextView
             android:id="@+id/note_content"
             android:layout_width="match_parent"
+            android:maxLines="5"
             android:layout_height="wrap_content"
             android:layout_below="@+id/note_title"
-            android:fontFamily="@font/inter_regular"
+            android:fontFamily="@font/balooda2"
             android:text="@string/note_content_demo"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="14sp" />
 
     </LinearLayout>
